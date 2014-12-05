@@ -90,7 +90,7 @@ class CheckersCanvas extends Canvas implements ActionListener, MouseListener {
 		if (currentPlayer == CheckersData.RED)
 			gameOver("RED resigns.  BLACK wins.");
 		else
-			gameOver("BLACK resigns.  RED winds.");
+			gameOver("BLACK resigns.  RED wins.");
 	}
 
 
