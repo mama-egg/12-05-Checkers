@@ -67,7 +67,7 @@ class CheckersData {
 	public void makeMove(CheckersMove move) {
 		// Make the specified move.  It is assumed that move
 		// is non-null and that the move it represents is legal.
-		makeMove(fromRow, fromCol, toRow, toCol);
+		makeMove(move.getFromRow(), move.getFromCol(), move.getToRow(), move.getToCol());
 	}
 
 	private void makeMove(int fromRow, int fromCol, int toRow, int toCol) {
