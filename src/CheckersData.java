@@ -54,20 +54,20 @@ class CheckersData {
 
 	public int pieceAt(int row, int col) {
 		// Return the contents of the square in the specified row and column.
-
+		return board[row][col];
 	}
 
 	public void setPieceAt(int row, int col, int piece) {
 		// Set the contents of the square in the specified row and column.
 		// piece must be one of the constants EMPTY, RED, BLACK, RED_KING,
 		// BLACK_KING.
-
+		board[row][col] = piece;
 	}
 
 	public void makeMove(CheckersMove move) {
 		// Make the specified move.  It is assumed that move
 		// is non-null and that the move it represents is legal.
-
+		makeMove(fromRow, fromCol, toRow, toCol);
 	}
 
 	private void makeMove(int fromRow, int fromCol, int toRow, int toCol) {
